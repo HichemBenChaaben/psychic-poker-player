@@ -9,6 +9,6 @@ export default function getUniqKingAndColourFromHand(hand: string[]): UniqHandAn
     // @ts-ignore
     uniqKind: [...new Set(kind)],
     // @ts-ignore
-    uniqColour: [... new Set(colour)]
+    uniqColour: [...new Set(colour)]
   })
 }

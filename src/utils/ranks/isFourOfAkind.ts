@@ -9,7 +9,7 @@ export default function isFourOfAkind(hand: string[]): boolean {
 
   // in a hand of 5 cards
   // 4 cards of the same rank
-  if (uniqKind.length === 2 && uniqColour.length == 4 && hasRepeatedLetters(kind, 4)) {
+  if (uniqKind.length === 2 && uniqColour.length === 4 && hasRepeatedLetters(kind, 4)) {
     return true;
   }
   return false;

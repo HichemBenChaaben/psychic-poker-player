@@ -5,20 +5,18 @@ import getInitialHand from "./getInitialHand";
 
 const getFormattedMessage = (line: string, bestScore: number, cardsToDiscard: string[], winningHand: string[]) => {
   const { initialHand, restOfTheDeck } = getInitialHand(line);
-  return {
+  return ({
     // @ts-ignore
     message: `HAND: ${initialHand} Deck: ${restOfTheDeck} ${SCORE[bestScore] as any}`,
     cardsToDiscard,
     winningHand,
-  }
+  })
 }
 
-export default function startGame(str: string): string[] {
+export default function startGame(str: string): any[] {
   const inputLines = getLines(str);
-  let message = [] as any[];
-  inputLines.map((line, index) => {
+  return inputLines.map((line) => {
     const { bestScore, cardsToDiscard, winningHand } = getBestScoreByLine(line);
-    message[index] = getFormattedMessage(line, bestScore, cardsToDiscard, winningHand);
-  })
-  return message;
+    return getFormattedMessage(line, bestScore, cardsToDiscard, winningHand);
+  });
 }
