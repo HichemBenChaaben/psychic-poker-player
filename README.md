@@ -17,6 +17,10 @@ as a guide to understand the requirements of the excercice.
 I used functional programming and unit testing to address the challenges and a small 
 library to calculate combinations in a given array of characters.
 
+#### Preview
+
+<img src="/preview.png" />
+
 
 #### Install and run locally instructions
 
