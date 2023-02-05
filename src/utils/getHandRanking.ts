@@ -8,9 +8,10 @@ import isFiveOfAKind from './ranks/isFiveOfAKind';
 import isStraightFlush from './ranks/isStraightFlush';
 import isStraight from './ranks/isStraight';
 import isTwoPair from './ranks/isTwoPair';
+import { Hand } from '../types';
 
 export default function getHandRanking(input: string): number {
-  const hand = input.split(' ');
+  const hand = input.split(' ') as Hand;
 
   if (hand.length !== 5) {
     throw new Error('A hand should always have 5 cards');

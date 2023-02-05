@@ -6,8 +6,7 @@ import getInitialHand from "./getInitialHand";
 const getFormattedMessage = (line: string, bestScore: number, cardsToDiscard: string[], winningHand: string[]) => {
   const { initialHand, restOfTheDeck } = getInitialHand(line);
   return ({
-    // @ts-ignore
-    message: `HAND: ${initialHand} Deck: ${restOfTheDeck} ${SCORE[bestScore] as any}`,
+    message: `HAND: ${initialHand} Deck: ${restOfTheDeck} ${SCORE[bestScore]}`,
     cardsToDiscard,
     winningHand,
   })

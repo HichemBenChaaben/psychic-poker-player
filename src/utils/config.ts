@@ -1,4 +1,5 @@
-export const SCORE = {
+
+export const SCORE: { [key: number]: string } = {
   10: "five-of-a-kind",
   9: "straight-flush",
   8: "four-of-a-kind",

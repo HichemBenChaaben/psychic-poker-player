@@ -1,6 +1,6 @@
-import { UniqHandAndColor } from "../types";
+import { Hand, UniqHandAndColor } from "../types";
 
-export default function getUniqKingAndColourFromHand(hand: string[]): UniqHandAndColor {
+export default function getUniqKingAndColourFromHand(hand: Hand): UniqHandAndColor {
   const kind = hand.map((str: string) => str.slice(0, 1));
   const colour = hand.map((str: string) => str.slice(-1));
   return ({

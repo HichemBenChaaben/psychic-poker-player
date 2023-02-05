@@ -1,3 +1,5 @@
+export type Hand = [string, string, string, string, string];
+
 export interface InitialHand {
   initialHand: string[];
   restOfTheDeck: string[]

@@ -1,7 +1,8 @@
+import { Hand } from "../../types";
 import getUniqKingAndColourFromHand from "../getUniqKingAndColourFromHand";
 import hasRepeatedLetters from "./hasRepeatedLetters";
 
-export default function isFourOfAkind(hand: string[]): boolean {
+export default function isFourOfAkind(hand: Hand): boolean {
   // also known as quads, is a hand that contains;
   // four cards of one rank and one card of another rank (the kicker),
   // such as 9♣ 9♠ 9♦ 9♥ J♥

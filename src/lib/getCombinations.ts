@@ -7,4 +7,5 @@ var combinations = require('combinations');
  */
 export default function getCombinations(str: string[], min: number): string[] | any[] {
   return combinations(str, min);
+  // return generateCombinations(str, min);
 }

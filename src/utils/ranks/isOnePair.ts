@@ -1,7 +1,8 @@
+import { Hand } from "../../types";
 import { hasPair } from "../checkPairs";
 import getUniqKingAndColourFromHand from "../getUniqKingAndColourFromHand";
 
-export default function isOnePair(hand: string[]): boolean {
+export default function isOnePair(hand: Hand): boolean {
   const { kind } = getUniqKingAndColourFromHand(hand);
   // a hand that contains three cards of one rank;
   // and two cards of two other ranks (the kickers),
